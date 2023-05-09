@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>frutta_main</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- 메인배너 CSS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- 메뉴 CSS -->
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <h1 id="logo">
+                <a href="#"><img src="./images/logo.png" alt="프루타로고"></a>
+            </h1>
+            <ul>
+                <li><a href="#best_item">BEST & NEW</a></li>
+                <li><a href="#beverage">BEVERAGE</a></li>
+                <li><a href="#dessert">DESSERT</a></li>
+                <li><a href="#interior_box">STORE</a></li>
+            </ul>
+            <h1 id="franchise_button">
+                <a href="#"><img src="./images/Franchise.png" alt="프랜차이즈이동"></a>
+            </h1>
+        </div><!--header_inner-->
+    </div><!--header-->
+
+    <!-- Swiper -->
+    <div id="main">
+        <div class="swiper mainbanner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/main_banner1.png" alt="메인1"></div>
+                <div class="swiper-slide"><img src="./images/main_banner2.png" alt="메인2"></div>
+                <div class="swiper-slide"><img src="./images/main_banner3.png" alt="메인3"></div>
+            </div>
+            <div class="swiper-button-next mbnext"></div>
+            <div class="swiper-button-prev mbprev"></div>
+            <div class="swiper-pagination mbpag"></div>
+        </div><!--mainbanner-->
+    </div><!--main-->
+    <div id="best_item">
+        <!-- 배경색 -->
+        <div class="best_item_inner">
+            <!-- 가운데 정렬 -->
+            <h1>BEST & NEW MENU</h1>
+            <ul>
+                <li>
+                    <img src="./images/bestmenu.png" alt="베스트메뉴">
+                    <div class="text_best">
+                        <p>베스트메뉴, 추천메뉴<br>
+                            프루타의 달콤하고 부드러운<br>
+                            쉐이크에 빠져보세요!
+                        </p>
+                        <a href="#"><img src="./images/morebutton.png" alt="MORE"></a>
+                    </div><!--text_best-->
+                </li>
+                <li>
+                    <div class="text_new">
+                        <p>
+                            프루타의 에이드 신메뉴<br>
+                            사이다 no! 과일시럽 no!<br>
+                            즉석에서 직접 제조한 탄산수와<br>
+                            생과일의 조화, 건강한 시원함!</p>
+                        <a href="#"><img src="./images/morebutton.png" alt="MORE"></a>
+                    </div><!--text_new-->
+                    <img src="./images/newmenu.png" alt="신메뉴">
+                </li>
+            </ul>
+        </div>
+    </div><!--best_item-->
+    <div id="beverage">
+        <div id="beverage_inner">
+            <!-- 가운데정렬 -->
+            <h1 class="menuu">BEVERAGE MENU</h1>
+            <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <img src="images/cherrysmoothie.png" alt="체리스무디">
+                        <h1>체리스무디</h1>
+                        <p>대용량<br>6,000원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/strawberryshake.png" alt="딸기쉐이크">
+                        <h1>딸기쉐이크</h1>
+                        <p>벤티<br>4,500원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/kiwijuice.png" alt="키위주스">
+                        <h1>키위주스</h1>
+                        <p>벤티<br>4,000원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/blueberryade.png" alt="블루베리에이드">
+                        <h1>블루베리에이드</h1>
+                        <p>대용량<br>5,500원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/lemontea.png" alt="레몬홍차">
+                        <h1>레몬홍차</h1>
+                        <p>그란데<br>3,500원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Americano.png" alt="아메리카노">
+                        <h1>아메리카노</h1>
+                        <p>그란데<br>3,500원</p>
+                    </div>
+
+                </div>
+
+                <!--도트를 추가하고 싶을때-->
+                <div class="swiper-pagination menu_pag"></div>
+            </div><!--mb E-->
+            <!--화살표추가-->
+            <div class="swiper-button-next menu_next"></div>
+            <div class="swiper-button-prev menu_prev"></div>
+
+
+
+        </div><!--beverage_inner-->
+    </div><!--beverage-->
+    <div id="dessert">
+        <div id="dessert_inner">
+            <!-- 가운데정렬 -->
+            <h1 class="menuu">DESSERT MENU</h1>
+            <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <img src="images/cupcake.png" alt="초코컵케잌">
+                        <h1>초코컵케잌</h1>
+                        <p>한개<br>2,200원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brownie.png" alt="라즈베리브라우니">
+                        <h1>라즈베리브라우니</h1>
+                        <p>한조각<br>2,800원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Macaron.png" alt="마카롱">
+                        <h1>마카롱</h1>
+                        <p>한개<br>2,300원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cherrypie.png" alt="체리파이">
+                        <h1>체리파이</h1>
+                        <p>한조각<br>4,300원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cheesecake.png" alt="치즈케잌">
+                        <h1>치즈케잌</h1>
+                        <p>한조각<br>4,300원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/strawberrycake.png" alt="딸기케잌">
+                        <h1>딸기케잌</h1>
+                        <p>한조각<br>4,000원</p>
+                    </div>
+                </div>
+
+                <!--도트를 추가하고 싶을때-->
+                <div class="swiper-pagination menu_pag"></div>
+            </div><!--mb E-->
+            <!--화살표추가-->
+            <div class="swiper-button-next menu_next"></div>
+            <div class="swiper-button-prev menu_prev"></div>
+
+
+
+        </div><!--beverage_inner-->
+    </div><!--beverage-->
+    <div id="interior_box">
+        <div id="interior">
+            <ul class="box">
+                <li>
+                    <div class="swiper interior"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                        <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                            <div class="swiper-slide">
+                                <!--swiper-slide는 필수 클래스-->
+                                <img src="images/store interior1.png" alt="인테리어1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/store interior2.png" alt="인테리어2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/store interior3.png" alt="인테리어3">
+                            </div>
+
+                        </div>
+
+                        <!--도트를 추가하고 싶을때-->
+                        <div class="swiper-pagination interior_pag"></div>
+                    </div><!--mb E-->
+                    <!--화살표추가-->
+
+                </li>
+                <li>
+                    <div class="text padding">
+                        <h1>STORE INTERIOR</h1>
+                        <p>
+                            간판의 글씨가 크지 않아도, 화려하지 않아도<br>
+                            심플하지만 개성있는 매장.<br>
+                            프루타의 감성적이고 편안한 이미지를 보여줍니다.<br>
+                        <div class="simbol">
+                            <img src="./images/simbol.png" alt="프루타심볼">
+                        </div>
+                    </div><!--text-->
+        </div><!--interior-->
+    </div><!--interior_box-->
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="footer_inner">
+            <div class="footer_logo">
+                <img src="./images/logo.png" alt="푸터로고">
+                <div class="ask_wrap">
+                    <div class="ask_franchise">
+                        <p class="txt">가맹문의</p>
+                        <p class="number1">1234-1111</p>
+                    </div>
+                    <div class="ask_center">
+                        <p class="txt">고객센터</p>
+                        <p class="number2">1234-2222</p>
+                    </div>
+                </div>
+            </div><!--footer_logo-->
+
+            <div class="footer_info">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">가맹상담</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+
+                <div class="footer_addr">
+                    <div class="footer_addr1">
+                        <div class="footer_bx1">
+                            <p class="txt_head">프루타 부산 </p>
+                            <p class="txt_body">부산광역시 해운대구 센텀서로 30, 2507호 (KNN타워)</p>
+                        </div>
+
+                        <div class="footer_bx2">
+                            <p class="txt_head">프루타 서울 </p>
+                            <p class="txt_body">서울특별시 구로구 디지털로33길 27 408~414호</p>
+                        </div>
+                    </div><!--addr1-->
+
+                    <div class="footer_addr2">
+                        <p class="txt_head">Resources</p>
+                        <p class="txt_body">(주)프루타푸드 사업자번호 : 123-12-12345<br>
+                            대표이사 : 송종민</p>
+                    </div><!--addr2-->
+                </div><!--footer-addr-->
+
+            </div><!--footer_info-->
+            <div class="footer_img">
+                <ul>
+                    <li><a href="#"><img src="./images/instargram.png" alt="instar"></a></li>
+                    <li><a href="#"><img src="./images/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+    <div id="bottom">
+        <a href="#"><img src="./images/bottom.png" alt="말풍선"> 온라인 상담하기</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mainbanner", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".mbnext",
+                prevEl: ".mbprev",
+            },
+        });
+
+    </script>
+
+    <!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+    <!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+    <script>
+
+
+        var swiper = new Swiper(".card", {
+            navigation: {
+                nextEl: ".menu_next",
+                prevEl: ".menu_prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            autoplay: {
+                delay: 1000,
+                /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 0,
+        });//지우면 안되요!
+
+    </script>
+
+    <!-- interior -->
+    <script>
+
+
+        var swiper = new Swiper(".interior", {
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            /*autoplay: {
+                  delay: 2000,*/
+            /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+            /*disableOnInteraction: false,
+        },*/
+
+
+            speed: 500,
+            loop: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 0,
+        });//지우면 안되요!
+
+    </script>
+
+
+</body>
+
+</html>
